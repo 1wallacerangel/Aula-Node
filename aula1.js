@@ -1,6 +1,8 @@
 var http = require('http');
 http.createServer(function(req, res){
+    res.writeHead(200, {'Content-Type':'test/html'});
+    res.write('<h2>RAPHINHA CHUTA FOFO</h2> <br>');
+    res.write(Date().substring(16,24)+'<br>');
+    res.end('EIKE GOSTOSO');
 
-    res.write('Brasil 3 x 1 Servia \n');
-
-}).listen(3000);
+}).listen(8080);
